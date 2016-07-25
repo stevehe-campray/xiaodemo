@@ -1,0 +1,88 @@
+//
+//  Configs.pch
+//  brightsoftProject
+//
+//  Created by hejingjin on 16/7/19.
+//  Copyright © 2016年 Brightsoft. All rights reserved.
+//
+
+#ifndef Configs_pch
+#define Configs_pch
+
+//头文件
+
+//3方
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "UIImageView+WebCache.h"
+#import "SVProgressHUD.h"
+#import "ReactiveCocoa.h"
+
+//类目
+#import "UIView+BSTExtention.h"
+
+
+//单例
+
+
+//其他
+
+
+
+
+//颜色&字体
+#define BSTRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define BSTRGBAlphaColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+//16进制转10进制RGB
+#define BSTColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:0.99]
+//主体颜色
+#define BSTGlobalBg BSTRGBColor(223, 223, 223)
+
+#define BSTTagBg BSTRGBColor(74, 139, 209)
+#define BSTTagFont [UIFont systemFontOfSize:14]
+
+
+//系统颜色
+#define BSTBlackColor       [UIColor blackColor]
+#define BSTDarkGrayColor    [UIColor darkGrayColor]
+#define BSTLightGrayColor   [UIColor lightGrayColor]
+#define BSTWhiteColor       [UIColor whiteColor]
+#define BSTRedColor         [UIColor redColor]
+#define BSTBlueColor        [UIColor blueColor]
+#define BSTGreenColor       [UIColor greenColor]
+#define BSTCyanColor        [UIColor cyanColor]
+#define BSTYellowColor      [UIColor yellowColor]
+#define BSTMagentaColor     [UIColor magentaColor]
+#define BSTOrangeColor      [UIColor orangeColor]
+#define BSTPurpleColor      [UIColor purpleColor]
+#define BSTBrownColor       [UIColor brownColor]
+#define BSTClearColor       [UIColor clearColor]
+
+
+//图片名字加载
+#define BSTImage(Name) ([UIImage imageNamed:Name])
+
+#define BSTScreenW [UIScreen mainScreen].bounds.size.width
+#define BSTScreenH [UIScreen mainScreen].bounds.size.height
+
+
+//获取控件x，y
+#define MID_X(x) CGRectGetMidX(x)
+#define MID_Y(y) CGRectGetMidY(y)
+#define MIN_X(x) CGRectGetMinX(x)
+#define MIN_Y(y) CGRectGetMinY(y)
+#define MAX_X(x) CGRectGetMaxX(x)
+#define MAX_Y(y) CGRectGetMaxY(y)
+
+//网络请求地址
+
+#define MainInterfaceUrl @"1111";
+
+#define subxxxUrl @"";
+
+#define Register @"1111";
+
+#endif /* Configs_pch */
